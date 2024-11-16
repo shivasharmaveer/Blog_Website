@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap');
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F3F4F6;
+    color: #333;
+    padding-top: 100px;
+}
+
+.header {
+    padding: 1rem 0;
+    border-bottom: 1px solid #E5E7EB;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    z-index: 100;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #4F46E5;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.blog-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.blog-title {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: #1F2937;
+    margin-bottom: 1rem;
+}
+
+.blog-content {
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #374151;
+    margin: 1rem 0;
+}
+
+.blogs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: 1rem 0;
+    padding-top: 20px;
+}
+
+.blog-card {
+    background: linear-gradient(135deg, #FFFFFF, #F9FAFB);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.blog-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #1F2937;
+}
+
+.blog-description {
+    font-size: 1rem;
+    color: #4B5563;
+    line-height: 1.6;
+}
+
+.blog-tags {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem; /* Gap between tags */
+}
+
+.tag {
+    background-color: #4F46E5;
+    color: #FFFFFF;
+    padding: 0.4rem 1.5rem; /* Added space around the tag text */
+    border-radius: 20px;
+    font-weight: 500;
+    text-decoration: none; /* Removed underline */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* Prevents line breaks in the text */
+}
+
+.tag:hover {
+    background-color: #4338CA;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.category {
+    background-color: #10B981;
+    color: #FFFFFF;
+    padding: 0.4rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category:hover {
+    background-color: #059669;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.loading-container,
+.no-blogs-container {
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1F2937;
+}
+
+.loading-text,
+.no-blogs-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.875rem;
+}
+
+.pagination-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    padding: 0.25rem 0;
+    border-top: 1px solid #E5E7EB;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.pagination-button {
+    border: 1px solid #D1D5DB;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    background-color: #FFFFFF;
+    color: #4F46E5;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination-button:hover {
+    background-color: #4F46E5;
+    color: #FFFFFF;
+}
+
+.page-info {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1F2937;
+    margin-left: auto;
+}
